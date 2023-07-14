@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;/* * represent for all box until override latter*/
+        }
+        body{
+            background-color: rgb(114 252 252);
+        }
+        .container{
+            background-color: rgb(92, 204, 182);
+            border: 5px solid rgb(245, 131, 32);
+            /* padding: 64px;  */
+            /* we can set padding for top bottom left and right */
+            /* padding-top: 79px;
+            padding-bottom: 79px;
+            padding-left: 35px;
+            padding-right: 25px; */
+            /* margin have a same tags */
+            
+            /* padding/margin= top right bottom left */
+            /* padding: 23px 54px 5px 67px; */
+
+            /* padding/margin: y(top/bottom) x(left/right); */
+            padding: 34px 19px;
+
+            margin: 13px 30px;
+
+            border-radius: 25px;
+            width: 455px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, numquam illo asperiores esse exercitationem
+            explicabo doloribus illum ut fugit, ducimus facere nam debitis nihil ullam sequi laboriosam alias, porro
+            praesentium libero labore.</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, numquam illo asperiores esse exercitationem
+            explicabo doloribus illum ut fugit, ducimus facere nam debitis nihil ullam sequi laboriosam alias, porro
+            praesentium libero labore.</p>
+    </div>
+
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, numquam illo asperiores esse exercitationem
+            explicabo doloribus illum ut fugit, ducimus facere nam debitis nihil ullam sequi laboriosam alias, porro
+            praesentium libero labore.</p>
+    </div>
+</body>
+
+</html>

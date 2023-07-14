@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,width,borders and backgrounds</title>
+    <style>
+        #firstpara{
+            background-color: red;
+            height: 100px;
+            width: 400px;
+            border: 5px solid green; 
+            /*border-width: 4px;
+            border-color: green;
+            border-style: solid;*/
+            border-radius: 10px;
+        }
+        #secondpara{
+            background-color: rgb(100, 247, 100);
+            height: 100px;
+            width: 400px;
+            border-top: 5px solid violet;
+            border-bottom: 5px solid blueviolet;
+            border-right: 5px solid rgba(100,100,100,0.77);
+            border-left: 5px solid red;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 20px;
+        }
+        #thirdpara{
+            height:500px;
+            width: 500px;
+            background-image: url('https://static.vecteezy.com/packs/media/photos/term-bg-1-34fe4c59.jpg');
+            border: 5px solid red;
+            background-repeat: no-repeat;/* repeat x for x axis and repeat y for y axis*/
+            background-position: center top;
+        }
+    </style>
+</head>
+<body>
+    <h3>Heading_one</h3>
+    <p id="firstpara"><b>this is a paragraph</b></p>
+    <h3>Heading_two</h3>
+    <p id="secondpara"><b>this is a second paragraph</b></p>
+    <h3>Heading_three</h3>
+    <p id="thirdpara"><b>this is a third paragraph</b></p>
+    
+</body>
+</html>

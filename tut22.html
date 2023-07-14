@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors & moe designing</title>
+    <style>
+        .container{
+            border: 3px solid red;
+            background-color: rgb(169, 255, 188);
+            padding: 34px;
+            margin: 36px auto;
+            width: 555px;
+        }
+        .btn{
+            background-color: azure;
+            padding: 4px;  
+            cursor:pointer;
+            font-size: 15px;
+            border-radius: 4px;  
+        }
+        a:hover{
+            color: rgb(16, 16, 16);
+            background-color: rgb(147, 251, 178);
+        }
+        a:visited{
+            color: rgb(91, 91, 20);
+        }
+        a:active{
+            color:blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="cont1" class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam nam ipsam odio distinctio possimus tempore
+            modi harum vero inventore. Quidem sed facere sit dicta sequi harum placeat praesentium inventore, similique
+            odit eius. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat cumque quibusdam laboriosam
+            labore delectus? Perspiciatis labore, aliquid temporibus fugit blanditiis hic, quaerat magni vitae dolorem
+            saepe at aperiam et tempora?</p>
+            <a href="https://www.lipsum.com/" class="bttn">read more</a>
+            <button class="btn" onclick="window.location.href='https://www.facebook.com/'; ">contact us</button>
+    </div>
+
+</body>
+
+</html>

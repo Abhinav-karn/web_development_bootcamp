@@ -1,0 +1,68 @@
+// console.log("hello world")
+const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+//   res.end('Hello World');
+//   for showing Html content
+  res.end(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>media Queries</title>
+      <style>
+          .box{
+              font-size: 72px;
+              text-align: center;
+              background-color: red;
+              color: blue;
+              display: none;
+          }
+          @media (max-width:300px){
+              #box-1{
+                  display: block;
+                  background-color: cyan;
+              }
+          }
+          @media (min-width:300px) and (max-width:500px){
+              #box-2{
+                  display: block;
+                  background-color:pink;
+              }
+          }
+          @media (min-width:500px) and (max-width:800px){
+              #box-3{
+                  display: block;
+                  background-color:yellow;
+              }
+          }
+          @media (min-width:800px){
+              #box-4{
+                  display: block;
+                  background-color:green;
+              }
+          }
+  
+      </style>
+  </head>
+  <body>
+      <div class="box" id="box-1">phone screen</div>
+      <div class="box" id="box-2">tablet screen</div>
+      <div class="box" id="box-3">computer screen</div>
+      <div class="box" id="box-4">TV screen</div>
+      
+  </body>
+  </html>`)
+
+
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
